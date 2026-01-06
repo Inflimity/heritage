@@ -66,3 +66,9 @@
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
+
+.group:hover .fa-solid {
+    filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.6));
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+}
