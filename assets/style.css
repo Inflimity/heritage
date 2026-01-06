@@ -1,0 +1,68 @@
+/* =========================================
+   1. CUSTOM SCROLLBAR
+   ========================================= */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    /* Using the dark track for better contrast */
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #B89146;
+    border-radius: 4px;
+}
+
+/* =========================================
+   2. SCROLL ANIMATIONS (Side Fade + Blur)
+   ========================================= */
+.animate-on-scroll {
+    opacity: 0;
+    /* Start from the LEFT side (-50px) */
+    transform: translateX(-50px);
+    /* Add a blur for a "premium" motion feel */
+    filter: blur(5px);
+    /* Smooth transition for 1 second */
+    transition: all 1s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    /* End at original position */
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+/* =========================================
+   3. COMPONENT STYLES
+   ========================================= */
+
+/* Hero Carousel Images */
+.carousel-item {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* Slower fade (2s) for classier feel */
+    transition: opacity 2s ease-in-out;
+    z-index: 0;
+}
+
+/* Typewriter Cursor */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background-color: #B89146;
+    vertical-align: text-bottom;
+}
+
+/* FAQ Accordion Transition */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
