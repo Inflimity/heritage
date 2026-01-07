@@ -639,15 +639,14 @@
 
                 <div class="bg-brand-light p-8 md:p-12 border border-gray-100 shadow-xl animate-on-scroll"
                     style="transition-delay: 200ms;">
-                    <form class="space-y-8">
-
+                    <form class="space-y-10">
                         <div class="grid md:grid-cols-2 gap-8">
                             <div class="relative">
                                 <input type="text" id="name"
                                     class="peer w-full bg-transparent border-b border-gray-300 py-3 text-brand-dark focus:outline-none focus:border-brand-gold transition-colors placeholder-transparent"
                                     placeholder="Name">
                                 <label for="name"
-                                    class="absolute left-0 -top-3.5 text-xs text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-gold">Full
+                                    class="absolute left-0 -top-3.5 text-xs text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-gold cursor-text">Full
                                     Name</label>
                             </div>
                             <div class="relative">
@@ -655,23 +654,23 @@
                                     class="peer w-full bg-transparent border-b border-gray-300 py-3 text-brand-dark focus:outline-none focus:border-brand-gold transition-colors placeholder-transparent"
                                     placeholder="Email">
                                 <label for="email"
-                                    class="absolute left-0 -top-3.5 text-xs text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-gold">Email
+                                    class="absolute left-0 -top-3.5 text-xs text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-gold cursor-text">Email
                                     Address</label>
                             </div>
                         </div>
 
                         <div class="relative">
-
-                            <select id="department" class="peer w-full ...">
-                                <option value="" disabled selected>Nature of Request</option>
+                            <select id="department"
+                                class="peer w-full bg-transparent border-b border-gray-300 py-3 text-brand-dark focus:outline-none focus:border-brand-gold transition-colors appearance-none cursor-pointer">
+                                <option value="" disabled selected class="text-gray-400">Select Request Type</option>
                                 <option value="bio-consult">General Consultation</option>
                                 <option value="bulk-it">Enterprise IT Procurement</option>
-                                <option value="wholesale">Wholesale Hardware Distribution</option>
+                                <option value="wholesale">Wholesale Distribution</option>
                             </select>
-                            <label for="department" class="absolute left-0 -top-3.5 text-xs text-brand-gold">I'm
-                                interested in...</label>
+                            <label for="department" class="absolute left-0 -top-3.5 text-xs text-brand-gold">Nature of
+                                Request</label>
                             <i
-                                class="fa-solid fa-chevron-down absolute right-0 top-4 text-xs text-gray-400 pointer-events-none"></i>
+                                class="fa-solid fa-chevron-down absolute right-0 top-4 text-[10px] text-gray-400 pointer-events-none"></i>
                         </div>
 
                         <div class="relative">
@@ -679,19 +678,18 @@
                                 class="peer w-full bg-transparent border-b border-gray-300 py-3 text-brand-dark focus:outline-none focus:border-brand-gold transition-colors placeholder-transparent"
                                 placeholder="Message"></textarea>
                             <label for="message"
-                                class="absolute left-0 -top-3.5 text-xs text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-gold">How
+                                class="absolute left-0 -top-3.5 text-xs text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-gold cursor-text">How
                                 can we help?</label>
                         </div>
 
                         <div class="pt-4">
                             <button type="submit"
-                                class="w-full bg-brand-dark text-white font-bold text-xs uppercase tracking-widest py-4 px-8 hover:bg-brand-gold hover:text-white transition duration-500 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                class="w-full bg-brand-dark text-white font-bold text-xs uppercase tracking-widest py-4 px-8 hover:bg-brand-gold transition duration-500 shadow-lg transform hover:-translate-y-1">
                                 Send Message
                             </button>
                         </div>
                     </form>
                 </div>
-
             </div>
         </div>
 
