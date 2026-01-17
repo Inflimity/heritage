@@ -130,3 +130,23 @@ function closeModal() {
     modal.classList.add('hidden');
     modal.classList.remove('flex');
 }
+
+// --- 6. COOKIE CONSENT LOGIC ---
+document.addEventListener("DOMContentLoaded", function () {
+    const cookiePopup = document.getElementById('cookie-popup');
+    const acceptBtn = document.getElementById('accept-cookies');
+
+    if (cookiePopup && acceptBtn) {
+        if (!localStorage.getItem('cookie-consent')) {
+            // Show popup after a short delay
+            setTimeout(() => {
+                cookiePopup.classList.remove('translate-y-full');
+            }, 1000);
+        }
+
+        acceptBtn.addEventListener('click', () => {
+            localStorage.setItem('cookie-consent', 'true');
+            cookiePopup.classList.add('translate-y-full');
+        });
+    }
+});
